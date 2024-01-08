@@ -27,7 +27,7 @@ const HeartRateCalculator = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.label}>Enter your age:</Text>
+      <Text style={styles.label}>Age:</Text>
       <TextInput
         style={styles.input}
         keyboardType="numeric"
@@ -36,8 +36,8 @@ const HeartRateCalculator = () => {
         onChangeText={handleAgeChange}
       />
       <View style={styles.limitsContainer}>
-        <Text style={styles.limitsText}>Lower Limit: {lowerLimit}</Text>
-        <Text style={styles.limitsText}>Upper Limit: {upperLimit}</Text>
+        <Text style={styles.limitsText}>Hr limits: {lowerLimit} - {upperLimit} </Text>
+        
       </View>
     </View>
   );
